@@ -1,0 +1,4 @@
+variable,label,za_level_rejections_5pct,za_level_specs_checked,baseline_later_start_i1_support,supplementary_interpretation
+log_bitcoin_market_price_usd,Log Bitcoin market price,3,3,False,I(1) support appears in 4 of 5 sample-start checks; interpret alongside break-aware evidence.
+log_mci_weighted,"Log MCI, weighted efficiency",2,3,False,ADF supports stationary first differences and KPSS rejection is bandwidth-fragile; I(1) interpretation is strengthened with lifecycle-rule caveat.
+log_mci_frontier,"Log MCI, frontier efficiency",2,3,True,Supplementary evidence remains consistent with the preliminary I(1) interpretation.

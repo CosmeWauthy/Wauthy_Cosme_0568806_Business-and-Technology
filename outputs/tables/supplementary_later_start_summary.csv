@@ -1,0 +1,16 @@
+sample_start,sample_end,nobs_levels,variable,label,level_adf_rejects_5pct,level_kpss_rejects_5pct,diff_adf_rejects_5pct,diff_kpss_rejects_5pct,i1_support,note
+2010-08-01,2025-12-01,185,log_bitcoin_market_price_usd,Log Bitcoin market price,1,2,2,1,False,Treat level ADF rejections cautiously when breaks/trends are plausible
+2010-08-01,2025-12-01,185,log_mci_weighted,"Log MCI, weighted efficiency",0,2,2,2,False,Treat level ADF rejections cautiously when breaks/trends are plausible
+2010-08-01,2025-12-01,185,log_mci_frontier,"Log MCI, frontier efficiency",0,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2012-01-01,2025-12-01,168,log_bitcoin_market_price_usd,Log Bitcoin market price,1,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2012-01-01,2025-12-01,168,log_mci_weighted,"Log MCI, weighted efficiency",2,2,0,1,False,Treat level ADF rejections cautiously when breaks/trends are plausible
+2012-01-01,2025-12-01,168,log_mci_frontier,"Log MCI, frontier efficiency",1,2,1,1,False,Treat level ADF rejections cautiously when breaks/trends are plausible
+2013-01-01,2025-12-01,156,log_bitcoin_market_price_usd,Log Bitcoin market price,1,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2013-01-01,2025-12-01,156,log_mci_weighted,"Log MCI, weighted efficiency",1,0,1,1,False,Treat level ADF rejections cautiously when breaks/trends are plausible
+2013-01-01,2025-12-01,156,log_mci_frontier,"Log MCI, frontier efficiency",1,2,2,1,False,Treat level ADF rejections cautiously when breaks/trends are plausible
+2014-01-01,2025-12-01,144,log_bitcoin_market_price_usd,Log Bitcoin market price,0,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2014-01-01,2025-12-01,144,log_mci_weighted,"Log MCI, weighted efficiency",0,1,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2014-01-01,2025-12-01,144,log_mci_frontier,"Log MCI, frontier efficiency",0,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2016-01-01,2025-12-01,120,log_bitcoin_market_price_usd,Log Bitcoin market price,0,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2016-01-01,2025-12-01,120,log_mci_weighted,"Log MCI, weighted efficiency",1,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible
+2016-01-01,2025-12-01,120,log_mci_frontier,"Log MCI, frontier efficiency",0,2,2,0,True,Treat level ADF rejections cautiously when breaks/trends are plausible

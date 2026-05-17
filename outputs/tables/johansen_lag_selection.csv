@@ -1,0 +1,17 @@
+system,sample,criterion,selected_var_lag_order,max_var_lags,trend_used_for_var_selection
+weighted,baseline_2010_08,AIC,11,12,c
+weighted,baseline_2010_08,BIC,2,12,c
+weighted,baseline_2010_08,HQIC,2,12,c
+weighted,baseline_2010_08,FPE,11,12,c
+frontier,baseline_2010_08,AIC,2,12,c
+frontier,baseline_2010_08,BIC,2,12,c
+frontier,baseline_2010_08,HQIC,2,12,c
+frontier,baseline_2010_08,FPE,2,12,c
+weighted,asic_robustness_2014_01,AIC,2,12,c
+weighted,asic_robustness_2014_01,BIC,2,12,c
+weighted,asic_robustness_2014_01,HQIC,2,12,c
+weighted,asic_robustness_2014_01,FPE,2,12,c
+frontier,asic_robustness_2014_01,AIC,2,12,c
+frontier,asic_robustness_2014_01,BIC,2,12,c
+frontier,asic_robustness_2014_01,HQIC,2,12,c
+frontier,asic_robustness_2014_01,FPE,2,12,c

@@ -1,0 +1,4 @@
+variable,label,level_adf_rejects_5pct,level_kpss_rejects_5pct,diff_adf_rejects_5pct,diff_kpss_rejects_5pct,plausibly_i1,conclusion
+log_bitcoin_market_price_usd,Log Bitcoin market price,1,2,2,1,False,"Ambiguous, inspect before Johansen"
+log_mci_weighted,"Log MCI, weighted efficiency",0,2,2,2,False,"Ambiguous, inspect before Johansen"
+log_mci_frontier,"Log MCI, frontier efficiency",0,2,2,0,True,Plausibly I(1)

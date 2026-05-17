@@ -1,0 +1,17 @@
+"system","sample","model_id","model","any_test_rejects_5pct"
+"frontier","asic_robustness_2014_01",1,"C_level_shift",TRUE
+"weighted","asic_robustness_2014_01",1,"C_level_shift",TRUE
+"frontier","baseline_2010_08",1,"C_level_shift",TRUE
+"weighted","baseline_2010_08",1,"C_level_shift",FALSE
+"frontier","asic_robustness_2014_01",3,"C_S_regime_shift",TRUE
+"weighted","asic_robustness_2014_01",3,"C_S_regime_shift",TRUE
+"frontier","baseline_2010_08",3,"C_S_regime_shift",TRUE
+"weighted","baseline_2010_08",3,"C_S_regime_shift",TRUE
+"frontier","asic_robustness_2014_01",2,"C_T_level_shift_with_trend",TRUE
+"weighted","asic_robustness_2014_01",2,"C_T_level_shift_with_trend",TRUE
+"frontier","baseline_2010_08",2,"C_T_level_shift_with_trend",TRUE
+"weighted","baseline_2010_08",2,"C_T_level_shift_with_trend",TRUE
+"frontier","asic_robustness_2014_01",4,"regime_and_trend_shift",FALSE
+"weighted","asic_robustness_2014_01",4,"regime_and_trend_shift",FALSE
+"frontier","baseline_2010_08",4,"regime_and_trend_shift",TRUE
+"weighted","baseline_2010_08",4,"regime_and_trend_shift",FALSE

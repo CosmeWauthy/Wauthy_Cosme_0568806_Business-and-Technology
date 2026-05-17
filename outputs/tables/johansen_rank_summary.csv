@@ -1,0 +1,13 @@
+system,sample,sample_start,sample_end,nobs_levels,det_order,deterministic,var_lag_order_levels,k_ar_diff,trace_rank_95pct,maxeig_rank_95pct,chosen_rank_95pct,cointegration_supported_rank1,main_specification,lag_selection_note,rank_note
+weighted,baseline_2010_08,2010-08-01,2025-12-01,185,-1,none,11,10,1,1,1,True,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both support one cointegrating relation.
+weighted,baseline_2010_08,2010-08-01,2025-12-01,185,0,constant,11,10,0,0,0,False,True,AIC-selected VAR lag used.,Trace and max-eigenvalue both fail to support cointegration.
+weighted,baseline_2010_08,2010-08-01,2025-12-01,185,1,linear_trend,11,10,0,0,0,False,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both fail to support cointegration.
+frontier,baseline_2010_08,2010-08-01,2025-12-01,185,-1,none,2,1,1,1,1,True,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both support one cointegrating relation.
+frontier,baseline_2010_08,2010-08-01,2025-12-01,185,0,constant,2,1,2,2,2,False,True,AIC-selected VAR lag used.,Trace and max-eigenvalue agree on rank 2.
+frontier,baseline_2010_08,2010-08-01,2025-12-01,185,1,linear_trend,2,1,2,2,2,False,False,AIC-selected VAR lag used.,Trace and max-eigenvalue agree on rank 2.
+weighted,asic_robustness_2014_01,2014-01-01,2025-12-01,144,-1,none,2,1,0,0,0,False,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both fail to support cointegration.
+weighted,asic_robustness_2014_01,2014-01-01,2025-12-01,144,0,constant,2,1,0,0,0,False,True,AIC-selected VAR lag used.,Trace and max-eigenvalue both fail to support cointegration.
+weighted,asic_robustness_2014_01,2014-01-01,2025-12-01,144,1,linear_trend,2,1,1,1,1,True,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both support one cointegrating relation.
+frontier,asic_robustness_2014_01,2014-01-01,2025-12-01,144,-1,none,2,1,0,0,0,False,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both fail to support cointegration.
+frontier,asic_robustness_2014_01,2014-01-01,2025-12-01,144,0,constant,2,1,1,1,1,True,True,AIC-selected VAR lag used.,Trace and max-eigenvalue both support one cointegrating relation.
+frontier,asic_robustness_2014_01,2014-01-01,2025-12-01,144,1,linear_trend,2,1,1,1,1,True,False,AIC-selected VAR lag used.,Trace and max-eigenvalue both support one cointegrating relation.

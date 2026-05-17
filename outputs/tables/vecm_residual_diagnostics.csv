@@ -1,0 +1,5 @@
+specification,system,sample,whiteness_nlags,whiteness_statistic,whiteness_p_value,whiteness_conclusion,normality_statistic,normality_p_value,normality_conclusion
+frontier_asic_constant_main,frontier,asic_robustness_2014_01,12,34.26535464982116,0.7961983635921916,fail to reject,876.7780120067094,1.790288211116418e-188,reject
+weighted_baseline_parsimonious_constant,weighted,baseline_2010_08,12,87.66266578401435,4.626609946141675e-05,reject,12093.76138715298,0.0,reject
+frontier_baseline_none_sensitivity,frontier,baseline_2010_08,12,103.2431847024554,4.534424038884087e-07,reject,2972.770076139218,0.0,reject
+weighted_asic_linear_trend_sensitivity,weighted,asic_robustness_2014_01,12,61.98174311083487,0.024004629670483047,reject,11311.237699973826,0.0,reject

@@ -1,0 +1,12 @@
+specification,system,sample,variable,label,beta,std_err,z_stat,p_value
+frontier_asic_constant_main,frontier,asic_robustness_2014_01,log_bitcoin_market_price_usd,Log Bitcoin market price,1.0,0.0,0.0,0.0
+frontier_asic_constant_main,frontier,asic_robustness_2014_01,log_mci_frontier,"Log MCI, frontier efficiency",-0.9429127136081862,0.03960921637514511,-23.805386723072523,0.0
+frontier_asic_constant_main,frontier,asic_robustness_2014_01,restricted_constant,restricted_constant,15.291692272216627,1.011469641434665,15.118290896528487,0.0
+weighted_baseline_parsimonious_constant,weighted,baseline_2010_08,log_bitcoin_market_price_usd,Log Bitcoin market price,1.0,0.0,0.0,0.0
+weighted_baseline_parsimonious_constant,weighted,baseline_2010_08,log_mci_weighted,"Log MCI, weighted efficiency",16.26471662948455,3.6726466273189353,4.428609196566765,9.484269724246985e-06
+weighted_baseline_parsimonious_constant,weighted,baseline_2010_08,restricted_constant,restricted_constant,-470.31101033487766,98.03653097229774,-4.797303675175673,1.6081570108905652e-06
+frontier_baseline_none_sensitivity,frontier,baseline_2010_08,log_bitcoin_market_price_usd,Log Bitcoin market price,1.0,0.0,0.0,0.0
+frontier_baseline_none_sensitivity,frontier,baseline_2010_08,log_mci_frontier,"Log MCI, frontier efficiency",-0.39445890852420623,0.017758984932641424,-22.211793636875136,0.0
+weighted_asic_linear_trend_sensitivity,weighted,asic_robustness_2014_01,log_bitcoin_market_price_usd,Log Bitcoin market price,1.0,0.0,0.0,0.0
+weighted_asic_linear_trend_sensitivity,weighted,asic_robustness_2014_01,log_mci_weighted,"Log MCI, weighted efficiency",-0.22301915290000202,0.02619838924781004,-8.5127047617496,0.0
+weighted_asic_linear_trend_sensitivity,weighted,asic_robustness_2014_01,restricted_linear_trend,restricted_linear_trend,-0.04205889674308774,0.0087183448959119,-4.824183631781932,1.4057785775456466e-06

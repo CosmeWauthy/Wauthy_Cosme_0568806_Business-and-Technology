@@ -1,0 +1,13 @@
+project:
+  name: thesis-analysis
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  tables: outputs/tables
+  figures: outputs/figures
+  logs: outputs/logs
+
+defaults:
+  date_column: date
+  timezone: Europe/Brussels

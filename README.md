@@ -1,2 +1,99 @@
-# Wauthy_Cosme_0568806_Business-and-Technology
-Code and data documentation for my master’s thesis on Bitcoin price and technology-based mining costs. Includes scripts for marginal-cost index construction, cointegration tests, VECM estimation, structural-break analysis, rolling-window results, and figure/table generation.
+# Bitcoin Price and Technology-Based Mining Costs
+
+This repository contains the reproducibility package for my master's thesis in Business and Technology. The thesis studies whether Bitcoin's market price is related to a technology-based marginal-cost index constructed from network difficulty, miner compensation, and mining-hardware efficiency.
+
+The analysis is monthly and covers the current thesis sample from August 2010 to December 2025. Two marginal-cost specifications are used:
+
+- a weighted-average hardware-efficiency path with a two-month deployment lag, a 60-month active life, and declining lifecycle weights;
+- a frontier hardware-efficiency path based on the most efficient available device in the cleaned CCAF/CBECI hardware list.
+
+## Data Availability
+
+This repository includes the final processed dataset used for the empirical analysis, together with the code used to construct it and reproduce the main results, tables, and figures. Raw data files are not included because redistribution permissions have not yet been fully verified for all sources. The complete raw-data archive is retained by the author and can be made available to the jury upon request, subject to source-specific restrictions. Requests can be sent to [cosme.brieuc.i.wauthy@vub.be](mailto:cosme.brieuc.i.wauthy@vub.be).
+
+## Repository Contents
+
+```text
+config/                  Relative paths used by the Python scripts
+data/
+  raw/                   Empty by design; raw files are not redistributed
+  processed/             Small final/derived datasets used for reproducibility
+docs/                    Data documentation and reproduction notes
+fair_logs/               Filtered FAIR GenAI usage table and raw logs for reproducible outputs
+outputs/
+  tables/                Final econometric tables and Markdown reports
+  figures/               Final thesis and appendix figures
+scripts/
+  analysis/              Sequential data-construction and econometric scripts
+  figures/               Sequential figure-generation scripts
+```
+
+For a table-by-table and figure-by-figure mapping from outputs to scripts, see `docs/output_manifest.md`.
+
+## Reproducing the Analysis
+
+Create a Python environment and install the Python dependencies:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements-python.txt
+```
+
+Install the R packages listed in `requirements-r.txt`.
+
+The Python scripts use `config/paths.yaml`, which is written with paths relative to the repository root. Run scripts from the repository root.
+
+### From Raw Data
+
+Raw source files are not included. To reproduce the full pipeline from raw inputs, place the required source files in `data/raw/` using the filenames described in `data/raw/README.md`, then run:
+
+```bash
+python scripts/analysis/01_prepare_data.py
+python scripts/analysis/02_prepare_hardware.py
+python scripts/analysis/03_aggregate_monthly_backbone.py
+python scripts/analysis/04_construct_frontier_efficiency.py
+python scripts/analysis/05_construct_weighted_efficiency.py
+python scripts/analysis/06_construct_monthly_master_panel.py
+```
+
+### From Included Processed Data
+
+The repository includes small processed/final datasets needed to inspect and rerun the econometric workflow without redistributing the original raw downloads. From the repository root, run:
+
+```bash
+python scripts/analysis/07_preliminary_diagnostics.py
+python scripts/analysis/08_supplementary_stationarity_checks.py
+python scripts/analysis/09_johansen_cointegration.py
+Rscript scripts/analysis/10_gregory_hansen_tests.R
+python scripts/analysis/11_vecm_estimation.py
+python scripts/analysis/12_write_vecm_full_markdown_report.py
+python scripts/analysis/13_rolling_vecm.py
+Rscript scripts/analysis/14_weak_exogeneity_tests.R
+Rscript scripts/figures/01_plot_bitcoin_price_events.R
+Rscript scripts/figures/02_plot_results_rolling_vecm.R
+Rscript scripts/figures/03_generate_appendix_b_figures.R
+```
+
+The scripts write tables to `outputs/tables/` and figures to `outputs/figures/`.
+
+## Data Limitations
+
+The raw files are not included because redistribution permissions have not yet been fully verified for all sources. This applies especially to raw market, protocol/network, and hardware-source downloads. The complete raw-data archive is retained by the author and can be made available to the jury upon request, subject to source-specific restrictions. Requests can be sent to [cosme.brieuc.i.wauthy@vub.be](mailto:cosme.brieuc.i.wauthy@vub.be). The repository documents the raw sources and includes the final processed dataset used for the empirical analysis:
+
+- `data/processed/monthly/monthly_master_panel.csv`
+
+Use the documentation in `data/raw/README.md` to recreate the processed dataset locally from the original sources.
+
+## Main Outputs
+
+Final tables and reports are in `outputs/tables/`. Final figures are in `outputs/figures/`, including:
+
+- `bitcoin_price_timeseries_events.png`, generated by `scripts/figures/01_plot_bitcoin_price_events.R`
+- `preliminary_diagnostics_levels_diffs.png`, generated by `scripts/analysis/07_preliminary_diagnostics.py`
+- `rolling_vecm_combined_frontier_weighted_r.png`, generated by `scripts/figures/02_plot_results_rolling_vecm.R`
+- `figure_B1_rolling_vecm_36m_asic.png`, generated by `scripts/figures/03_generate_appendix_b_figures.R`
+- `figure_B2_rolling_vecm_48m_fullsample.png`, generated by `scripts/figures/03_generate_appendix_b_figures.R`
+- `figure_B3_rolling_vecm_36m_fullsample.png`, generated by `scripts/figures/03_generate_appendix_b_figures.R`
+- `figure_B4_levels_first_differences.png`, generated by `scripts/figures/03_generate_appendix_b_figures.R`
+- `figure_B5_gregory_hansen_break_timeline.png`, generated by `scripts/figures/03_generate_appendix_b_figures.R`

@@ -1,0 +1,3 @@
+variable,transformation,deterministic,kpss_rejections_at_5pct,kpss_specs_checked,min_statistic,max_statistic,min_lags_used,max_lags_used,fragility_conclusion
+log_mci_weighted,first_difference,c,9,12,0.3925351340522716,1.1138107307227392,1,24,Fragile to bandwidth
+log_mci_weighted,first_difference,ct,10,12,0.14224861906513728,0.3132953641400266,1,24,Fragile to bandwidth

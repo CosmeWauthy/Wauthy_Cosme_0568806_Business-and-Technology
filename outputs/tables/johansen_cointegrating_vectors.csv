@@ -1,0 +1,25 @@
+system,sample,det_order,deterministic,var_lag_order_levels,k_ar_diff,eigenvector_index,normalized_on,log_bitcoin_market_price_usd,log_mci_weighted,cointegration_relation,log_mci_frontier
+weighted,baseline_2010_08,-1,none,11,10,1,log_bitcoin_market_price_usd,1.0,-0.4084892069178353,log_bitcoin_market_price_usd + (-0.408489)*log_mci_weighted,
+weighted,baseline_2010_08,-1,none,11,10,2,log_bitcoin_market_price_usd,1.0,-0.21894416646728157,log_bitcoin_market_price_usd + (-0.218944)*log_mci_weighted,
+weighted,baseline_2010_08,0,constant,11,10,1,log_bitcoin_market_price_usd,1.0,-0.08785097007862863,log_bitcoin_market_price_usd + (-0.087851)*log_mci_weighted,
+weighted,baseline_2010_08,0,constant,11,10,2,log_bitcoin_market_price_usd,1.0,-1.646004194740843,log_bitcoin_market_price_usd + (-1.646004)*log_mci_weighted,
+weighted,baseline_2010_08,1,linear_trend,11,10,1,log_bitcoin_market_price_usd,1.0,-0.3927531068256724,log_bitcoin_market_price_usd + (-0.392753)*log_mci_weighted,
+weighted,baseline_2010_08,1,linear_trend,11,10,2,log_bitcoin_market_price_usd,1.0,0.6874205895999195,log_bitcoin_market_price_usd + (0.687421)*log_mci_weighted,
+frontier,baseline_2010_08,-1,none,2,1,1,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.394459)*log_mci_frontier,-0.39445890852420634
+frontier,baseline_2010_08,-1,none,2,1,2,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.195733)*log_mci_frontier,-0.19573344719937474
+frontier,baseline_2010_08,0,constant,2,1,1,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.670027)*log_mci_frontier,-0.6700265262518234
+frontier,baseline_2010_08,0,constant,2,1,2,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-1.112644)*log_mci_frontier,-1.1126439841250597
+frontier,baseline_2010_08,1,linear_trend,2,1,1,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.527395)*log_mci_frontier,-0.5273951220722796
+frontier,baseline_2010_08,1,linear_trend,2,1,2,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-2.937329)*log_mci_frontier,-2.937329334062065
+weighted,asic_robustness_2014_01,-1,none,2,1,1,log_bitcoin_market_price_usd,1.0,-0.4899028377758277,log_bitcoin_market_price_usd + (-0.489903)*log_mci_weighted,
+weighted,asic_robustness_2014_01,-1,none,2,1,2,log_bitcoin_market_price_usd,1.0,-0.287640699813204,log_bitcoin_market_price_usd + (-0.287641)*log_mci_weighted,
+weighted,asic_robustness_2014_01,0,constant,2,1,1,log_bitcoin_market_price_usd,1.0,-32.11205258321797,log_bitcoin_market_price_usd + (-32.112053)*log_mci_weighted,
+weighted,asic_robustness_2014_01,0,constant,2,1,2,log_bitcoin_market_price_usd,1.0,0.2158252118620161,log_bitcoin_market_price_usd + (0.215825)*log_mci_weighted,
+weighted,asic_robustness_2014_01,1,linear_trend,2,1,1,log_bitcoin_market_price_usd,1.0,0.5073943793461512,log_bitcoin_market_price_usd + (0.507394)*log_mci_weighted,
+weighted,asic_robustness_2014_01,1,linear_trend,2,1,2,log_bitcoin_market_price_usd,1.0,-1.1651494704796768,log_bitcoin_market_price_usd + (-1.165149)*log_mci_weighted,
+frontier,asic_robustness_2014_01,-1,none,2,1,1,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.496797)*log_mci_frontier,-0.4967967275573468
+frontier,asic_robustness_2014_01,-1,none,2,1,2,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.337004)*log_mci_frontier,-0.3370040170416993
+frontier,asic_robustness_2014_01,0,constant,2,1,1,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.933361)*log_mci_frontier,-0.9333605379136702
+frontier,asic_robustness_2014_01,0,constant,2,1,2,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-0.184389)*log_mci_frontier,-0.18438920116148497
+frontier,asic_robustness_2014_01,1,linear_trend,2,1,1,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (-1.253941)*log_mci_frontier,-1.253940997790265
+frontier,asic_robustness_2014_01,1,linear_trend,2,1,2,log_bitcoin_market_price_usd,1.0,,log_bitcoin_market_price_usd + (1.348899)*log_mci_frontier,1.348899057590295
